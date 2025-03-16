@@ -1,0 +1,60 @@
+@import "../../.cache/wal/colors-waybar.css";
+
+* {
+  font-family: SpaceMono Nerd Font, monospace;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+window#waybar {
+  background: transparent;
+}
+
+tooltip {
+  background: @background;
+  color: @foreground;
+}
+
+#custom-power_profile,
+#battery,
+#network,
+#bluetooth,
+#pulseaudio,
+#backlight,
+#clock,
+#tray {
+  padding: 0px 10px;
+  border: 0px;
+  margin: 3px 3px 3px 0px;
+  border-radius: 50px;
+  background-color: @background;
+  color: @foreground;
+}
+
+#clock {
+  padding: 0px 30px;
+  margin: 3px 0px;
+  border-radius: 50px;
+  background-color: @background;
+  color: @foreground;
+}
+
+#workspaces {
+  padding: 3px;
+  margin: 3px 0px 3px 3px;
+  border-radius: 50px;
+  background-color: @background;
+}
+
+#workspaces button {
+  padding: 0px 4px;
+  border-radius: 50px;
+  background-color: @background;
+  color: @foreground;
+}
+
+#workspaces button.active {
+  color: @background;
+  background-color: @foreground;
+}
+
