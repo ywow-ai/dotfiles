@@ -1,141 +1,36 @@
 {
-  "layer": "top",
-  "position": "top",
-  "exclusive": true,
-  "passthrough": false,
-  "gtk-layer-shell": true,
-  "height": 38,
   "modules-left": [
+    "custom/arch",
     "hyprland/workspaces"
   ],
+  "custom/arch": {
+    "format": "<span>\uf303</span>",
+    "on-click": "notify-send 'Arch Linux' 'You clicked the Arch button!'"
+  },
   "hyprland/workspaces": {
-    "format": "{icon}",
-    "active-only": false,
-    "all-outputs": true,
-    "on-scroll-up": "hyprctl dispatch workspace e+1",
-    "on-scroll-down": "hyprctl dispatch workspace e-1",
-    "format-window-separator": "\u00A0",
-    "window-rewrite-default": "\ueb7f",
-    "window-rewrite": {
-      "class<Chromium>": "\uf268",
-      "class<code-oss>": "\ue8da",
-      "class<kitty>": "\uf120",
-      "class<Spotify>": "\uf1bc",
-      "class<discord>": "\uf1ff",
-      "class<Postman>": "\ue86b",
-      "class<vlc>": "\udb81\udd7c"
+    "persistent-workspaces": {
+      "*": 10
     }
   },
   "modules-center": [
     "clock"
   ],
-  "modules-right": [
-    "network",
-    "bluetooth",
-    "backlight",
-    "pulseaudio",
-    "pulseaudio#microphone",
-    "battery",
-    "tray"
-  ],
   "clock": {
-    "format": "{:%H:%M:%S}",
-    "format-alt": "{:%d-%m-%Y}",
+    "format": "{:%Y-%m-%d %H:%M:%S}",
     "interval": 1
   },
-  "network": {
-    "format-wifi": "\uf1eb  {signalStrength}%",
-    "format-ethernet": "{ipaddr}/{cidr}",
-    "tooltip-format": "{essid} - {ifname} via {gwaddr}",
-    "format-linked": "{ifname} (No IP)",
-    "format-disconnected": "Disconnected \uf071",
-    "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}"
-  },
-  "bluetooth": {
-    "format": "\uf293 {status}",
-    "format-disabled": "",
-    "format-connected": "\uf293 {num_connections}",
-    "tooltip-format": "{device_alias}",
-    "tooltip-format-connected": "\uf293 {device_enumerate}",
-    "tooltip-format-enumerate-connected": "{device_alias}"
-  },
-  "custom/power_profile": {
-    "exec": "asusctl profile -p | sed s:'Active profile is'::",
-    "interval": 30,
-    "format": "󰈐{}",
-    "on-click": "asusctl profile -n; pkill -SIGRTMIN+8 waybar",
-    "signal": 8
-  },
-  "battery": {
-    "states": {
-      "good": 95,
-      "warning": 30,
-      "critical": 20
-    },
-    "interval": 1,
-    "format": "{icon} {capacity}%",
-    "format-charging": " {capacity}%",
-    "format-plugged": " {capacity}%",
-    "format-alt": "{time} {icon}",
-    "format-icons": [
-      "󰂎",
-      "󰁺",
-      "󰁻",
-      "󰁼",
-      "󰁽",
-      "󰁾",
-      "󰁿",
-      "󰂀",
-      "󰂁",
-      "󰂂",
-      "󰁹"
-    ]
-  },
-  "backlight": {
-    "device": "intel_backlight",
-    "format": "{icon} {percent}%",
-    "format-icons": [
-      "󰃞",
-      "󰃟",
-      "󰃠"
-    ],
-    "on-scroll-up": "brightnessctl set 1%+",
-    "on-scroll-down": "brightnessctl set 1%-",
-    "min-length": 6
-  },
-  "pulseaudio": {
-    "format": "{icon} {volume}%",
-    "tooltip": false,
-    "format-muted": " Muted",
-    "on-click": "pamixer -t",
-    "on-scroll-up": "pamixer -i 5",
-    "on-scroll-down": "pamixer -d 5",
-    "scroll-step": 5,
-    "format-icons": {
-      "headphone": "",
-      "hands-free": "",
-      "headset": "",
-      "phone": "",
-      "portable": "",
-      "car": "",
-      "default": [
-        "",
-        "",
-        ""
-      ]
-    }
-  },
-  "pulseaudio#microphone": {
-    "format": "{format_source}",
-    "format-source": " {volume}%",
-    "format-source-muted": " Muted",
-    "on-click": "pamixer --default-source -t",
-    "on-scroll-up": "pamixer --default-source -i 5",
-    "on-scroll-down": "pamixer --default-source -d 5",
-    "scroll-step": 5
-  },
-  "tray": {
-    "icon-size": 18,
-    "spacing": 10
+  "modules-right": [
+    // "network",
+    // "bluetooth",
+    // "backlight",
+    // "pulseaudio",
+    // "pulseaudio#microphone",
+    "battery",
+    // "tray",
+    "custom/power"
+  ],
+  "custom/power": {
+    "format": "\udb81\udc25",
+    "on-click": "wlogout"
   }
 }
