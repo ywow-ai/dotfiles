@@ -31,7 +31,7 @@ tooltip {
 
 #workspaces button {
   padding: 0px 4px;
-  border-radius: 4px;
+  border-radius: 8px;
   border: none;
   color: rgba(241, 240, 238, 1);
   background-color: rgba(175, 209, 254, 0.2);
@@ -59,15 +59,104 @@ tooltip {
   font-weight: bolder;
   padding: 0px 10px;
   margin: 3px 0px;
-  border-radius: 4px;
+  border-radius: 8px;
   background-color: rgba(34, 37, 70, 1);
+}
+
+#network {
+  font-size: 14px;
+  padding: 0px 10px 0px 8px;
+  border-radius: 8px;
+  margin: 3px 3px 3px 0px;
+  background-color: rgba(175, 209, 254, 0.2);
+}
+
+#network.wifi,
+#network.ethernet {
+  background-color: rgba(126, 191, 146, 1);
+}
+
+#network.wifi:hover,
+#network.ethernet:hover {
+  background-color: rgba(126, 191, 146, 0.8);
+}
+
+#network.disabled {
+  background-color: rgba(209, 106, 123, 1);
+}
+
+#network:hover:not(.wifi):not(.ethernet) {
+  background-color: rgba(175, 209, 254, 1);
+  color: rgba(34, 37, 70, 1);
+}
+
+#bluetooth {
+  font-size: 14px;
+  padding: 0px 10px 0px 8px;
+  border-radius: 8px;
+  margin: 3px 3px 3px 0px;
+  background-color: rgba(175, 209, 254, 0.2);
+}
+
+#bluetooth.on {
+  background-color: rgba(37, 91, 177, 1);
+}
+
+#bluetooth.on:hover {
+  background-color: rgba(37, 91, 177, 0.8);
+}
+
+#bluetooth.disabled {
+  background-color: rgba(209, 106, 123, 1);
+}
+
+#bluetooth.disabled:hover {
+  background-color: rgba(209, 106, 123, 0.8);
+}
+
+#bluetooth:hover:not(.disabled):not(.on) {
+  background-color: rgba(175, 209, 254, 1);
+  color: rgba(34, 37, 70, 1);
+}
+
+#pulseaudio {
+  font-size: 14px;
+  padding: 0px 10px 0px 8px;
+  border-radius: 8px;
+  margin: 3px 3px 3px 0px;
+  background-color: rgba(175, 209, 254, 0.2);
+}
+
+#pulseaudio.muted {
+  background-color: rgba(209, 106, 123, 1);
+}
+
+#pulseaudio.muted:hover {
+  background-color: rgba(209, 106, 123, 0.8);
+}
+
+#pulseaudio:hover:not(.muted) {
+  background-color: rgba(175, 209, 254, 1);
+  color: rgba(34, 37, 70, 1);
+}
+
+#pulseaudio#microphone {
+  font-size: 14px;
+  padding: 0px 10px 0px 8px;
+  border-radius: 8px;
+  margin: 3px 3px 3px 0px;
+  background-color: rgba(175, 209, 254, 0.2);
+}
+
+#pulseaudio#microphone:hover {
+  background-color: rgba(209, 106, 123, 1);
 }
 
 #custom-power {
   font-size: 14px;
   padding: 0px 10px 0px 8px;
-  border-radius: 4px;
-  margin: 3px;
+  border-radius: 8px;
+  margin: 3px 3px 3px 0px;
   background-color: rgba(175, 209, 254, 0.2);
 }
 
