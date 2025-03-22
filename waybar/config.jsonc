@@ -24,7 +24,6 @@
     "bluetooth",
     "backlight",
     "pulseaudio",
-    "pulseaudio#microphone",
     "battery",
     "tray",
     "custom/power"
@@ -54,7 +53,7 @@
     ]
   },
   "pulseaudio": {
-    "format": "{icon}",
+    "format": "{icon} {volume}%",
     "format-muted": "\udb81\udf5f",
     "format-icons": {
       "headphone": "\udb80\udecb",
@@ -75,12 +74,36 @@
     "format-source": "\udb80\udf6c",
     "format-source-muted": "\udb80\udf6d"
   },
+  "battery": {
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 20
+    },
+    "interval": 1,
+    "format": "{icon} {capacity}%",
+    "format-charging": "\udb81\udea5 {capacity}%",
+    "format-plugged": "\udb85\udfe2 {capacity}%",
+    "format-icons": [
+      "\uf244",
+      "\udb80\udc7a",
+      "\udb80\udc7b",
+      "\udb80\udc7c",
+      "\udb80\udc7d",
+      "\udb80\udc7e",
+      "\udb80\udc7f",
+      "\udb80\udc80",
+      "\udb80\udc81",
+      "\udb80\udc82",
+      "\udb80\udc79"
+    ]
+  },
   "tray": {
     "icon-size": 18,
     "spacing": 10
   },
   "custom/power": {
     "format": "\udb81\udc25",
-    "on-click": "wlogout"
+    "on-click": "wlogout --buttons-per-row=2"
   }
 }

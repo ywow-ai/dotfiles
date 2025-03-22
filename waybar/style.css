@@ -31,7 +31,7 @@ tooltip {
 
 #workspaces button {
   padding: 0px 4px;
-  border-radius: 8px;
+  border-radius: 4px;
   border: none;
   color: rgba(241, 240, 238, 1);
   background-color: rgba(175, 209, 254, 0.2);
@@ -59,14 +59,14 @@ tooltip {
   font-weight: bolder;
   padding: 0px 10px;
   margin: 3px 0px;
-  border-radius: 8px;
+  border-radius: 4px;
   background-color: rgba(34, 37, 70, 1);
 }
 
 #network {
   font-size: 14px;
   padding: 0px 10px 0px 8px;
-  border-radius: 8px;
+  border-radius: 4px;
   margin: 3px 3px 3px 0px;
   background-color: rgba(175, 209, 254, 0.2);
 }
@@ -90,10 +90,23 @@ tooltip {
   color: rgba(34, 37, 70, 1);
 }
 
+#backlight {
+  font-size: 14px;
+  padding: 0px 10px 0px 8px;
+  border-radius: 4px;
+  margin: 3px 3px 3px 0px;
+  background-color: rgba(175, 209, 254, 0.2);
+}
+
+#backlight:hover {
+  background-color: rgba(175, 209, 254, 1);
+  color: rgba(34, 37, 70, 1);
+}
+
 #bluetooth {
   font-size: 14px;
   padding: 0px 10px 0px 8px;
-  border-radius: 8px;
+  border-radius: 4px;
   margin: 3px 3px 3px 0px;
   background-color: rgba(175, 209, 254, 0.2);
 }
@@ -122,7 +135,7 @@ tooltip {
 #pulseaudio {
   font-size: 14px;
   padding: 0px 10px 0px 8px;
-  border-radius: 8px;
+  border-radius: 4px;
   margin: 3px 3px 3px 0px;
   background-color: rgba(175, 209, 254, 0.2);
 }
@@ -140,22 +153,41 @@ tooltip {
   color: rgba(34, 37, 70, 1);
 }
 
-#pulseaudio#microphone {
+#battery {
   font-size: 14px;
   padding: 0px 10px 0px 8px;
-  border-radius: 8px;
+  border-radius: 4px;
   margin: 3px 3px 3px 0px;
   background-color: rgba(175, 209, 254, 0.2);
 }
 
-#pulseaudio#microphone:hover {
+#battery.critical {
   background-color: rgba(209, 106, 123, 1);
+}
+
+#battery.critical:hover {
+  background-color: rgba(209, 106, 123, 0.8);
+}
+
+#battery.charging,
+#battery.plugged {
+  background-color: rgba(126, 191, 146, 1);
+}
+
+#battery.charging:hover,
+#battery.plugged:hover {
+  background-color: rgba(126, 191, 146, 0.8);
+}
+
+#battery:hover:not(.critical):not(.plugged):not(.charging) {
+  background-color: rgba(175, 209, 254, 1);
+  color: rgba(34, 37, 70, 1);
 }
 
 #custom-power {
   font-size: 14px;
   padding: 0px 10px 0px 8px;
-  border-radius: 8px;
+  border-radius: 4px;
   margin: 3px 3px 3px 0px;
   background-color: rgba(175, 209, 254, 0.2);
 }
