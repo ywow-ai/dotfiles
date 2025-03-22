@@ -99,8 +99,8 @@
     ]
   },
   "tray": {
-    "icon-size": 18,
-    "spacing": 10
+    "icon-size": 16,
+    "spacing": 3
   },
   "custom/power": {
     "format": "\udb81\udc25",
