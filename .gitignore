@@ -6,5 +6,9 @@
 !hypr/**
 !kitty/
 !kitty/**
-!wlogout
+!mako/
+!mako/**
+!wlogout/
 !wlogout/**
+!wofi/
+!wofi/**
