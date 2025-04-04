@@ -1,0 +1,109 @@
+{
+  "modules-left": [
+    "custom/arch",
+    "hyprland/workspaces"
+  ],
+  "custom/arch": {
+    "format": "\uf303",
+    "on-click": "notify-send 'Arch Linux' 'You clicked the Arch button!'"
+  },
+  "hyprland/workspaces": {
+    "persistent-workspaces": {
+      "*": 10
+    }
+  },
+  "modules-center": [
+    "clock"
+  ],
+  "clock": {
+    "format": "{:%Y-%m-%d %H:%M:%S}",
+    "interval": 1
+  },
+  "modules-right": [
+    "network",
+    "bluetooth",
+    "backlight",
+    "pulseaudio",
+    "battery",
+    "tray",
+    "custom/power"
+  ],
+  "network": {
+    "format-wifi": "\udb81\udda9",
+    "format-ethernet": "\udb83\udc9d",
+    "format-disconnected": "\udb83\udc5f",
+    "format-disabled": "\udb83\udc9c",
+    "format-linked": "\udb83\udc8a"
+  },
+  "bluetooth": {
+    "format": "\udb80\udcaf",
+    "format-disabled": "\udb80\udcb2",
+    "format-connected": "\udb80\udcb1"
+  },
+  "backlight": {
+    "format": "{icon}",
+    "format-icons": [
+      "\udb80\udcda",
+      "\udb80\udcdb",
+      "\udb80\udcdc",
+      "\udb80\udcdd",
+      "\udb80\udcde",
+      "\udb80\udcdf",
+      "\udb80\udce0"
+    ]
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "\udb81\udf5f",
+    "format-icons": {
+      "headphone": "\udb80\udecb",
+      "hands-free": "\udb80\udecb",
+      "headset": "\udb80\udecb",
+      "phone": "\udb80\udff2",
+      "portable": "\udb80\udff2",
+      "car": "\udb80\udd0b",
+      "default": [
+        "\udb81\udd7f",
+        "\udb81\udd80",
+        "\udb81\udd7e"
+      ]
+    }
+  },
+  "pulseaudio#microphone": {
+    "format": "{format_source}",
+    "format-source": "\udb80\udf6c",
+    "format-source-muted": "\udb80\udf6d"
+  },
+  "battery": {
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 20
+    },
+    "interval": 1,
+    "format": "{icon} {capacity}%",
+    "format-charging": "\udb81\udea5 {capacity}%",
+    "format-plugged": "\udb85\udfe2 {capacity}%",
+    "format-icons": [
+      "\uf244",
+      "\udb80\udc7a",
+      "\udb80\udc7b",
+      "\udb80\udc7c",
+      "\udb80\udc7d",
+      "\udb80\udc7e",
+      "\udb80\udc7f",
+      "\udb80\udc80",
+      "\udb80\udc81",
+      "\udb80\udc82",
+      "\udb80\udc79"
+    ]
+  },
+  "tray": {
+    "icon-size": 16,
+    "spacing": 3
+  },
+  "custom/power": {
+    "format": "\udb81\udc25",
+    "on-click": "wlogout --buttons-per-row=2"
+  }
+}
