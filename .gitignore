@@ -1,18 +1,1 @@
 *
-# !.gitignore
-# !gtk-3.0/
-# !gtk-3.0/**
-# !hypr/
-# !hypr/**
-# !kitty/
-# !kitty/**
-# !mako/
-# !mako/**
-# !ranger/
-# !ranger/**
-# !waybar/
-# !waybar/**
-# !wlogout/
-# !wlogout/**
-# !wofi/
-# !wofi/**
