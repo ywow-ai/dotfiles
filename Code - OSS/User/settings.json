@@ -1,8 +1,9 @@
 {
   "window.menuBarVisibility": "hidden",
-  "window.titleBarStyle": "native",
+  "window.titleBarStyle": "custom",
   "window.autoDetectColorScheme": true,
   "editor.tabSize": 2,
+  "editor.fontFamily": "JetBrains Mono",
   "editor.quickSuggestions": {
     "strings": true
   },
