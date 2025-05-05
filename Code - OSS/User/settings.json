@@ -58,6 +58,7 @@
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "editor.stickyScroll.enabled": false,
   // "workbench.colorCustomizations": {
   //   "activityBar.background": "#222546",
   //   "activityBar.border": "#383B58",
