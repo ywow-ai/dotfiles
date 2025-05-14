@@ -1,8 +1,6 @@
 sort=-time
 layer=overlay
 background-color=#22254699
-width=300
-height=110
 border-size=1
 border-color=#75D5E399
 text-color=#F1F0EE
@@ -24,3 +22,14 @@ default-timeout=4000
 [category=mpd]
 default-timeout=2000
 group-by=category
+
+[app-name=x-osd]
+background-color=#222546
+anchor=bottom-center
+default-timeout=1000
+border-size=0
+border-radius=5
+padding=10
+width=100
+outer-margin=0,0,25,0
+text-alignment=center
