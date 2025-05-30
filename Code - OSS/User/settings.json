@@ -261,5 +261,8 @@
     //   "titleBar.inactiveForeground": "#638CC4",
     //   "tree.indentGuidesStroke": "#A7A8B5",
     //   "widget.shadow": "#22254630"
-  }
+  },
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "redhat.telemetry.enabled": true
 }
