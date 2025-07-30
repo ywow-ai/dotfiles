@@ -1,9 +1,9 @@
 sort=-time
 layer=overlay
-background-color=#22254699
+background-color=#16253A99
 border-size=1
-border-color=#75D5E399
-text-color=#F1F0EE
+border-color=#1C64D199
+text-color=#C6D0DA
 border-radius=10
 icons=1
 max-icon-size=32
@@ -16,7 +16,7 @@ font=JetBrainsMono Nerd Font 11
 [urgency=normal]
 
 [urgency=high]
-border-color=#D16A7B
+border-color=#BA2D20
 default-timeout=4000
 
 [category=mpd]
@@ -24,7 +24,7 @@ default-timeout=2000
 group-by=category
 
 [app-name=x-osd]
-background-color=#222546
+background-color=#16253A
 anchor=bottom-center
 default-timeout=1000
 border-size=0
