@@ -20,12 +20,12 @@
     "interval": 1
   },
   "modules-right": [
-    "network",
-    "bluetooth",
+    // "network",
     "backlight",
+    // "bluetooth",
+    "tray",
     "pulseaudio",
     "battery",
-    "tray",
     "custom/power"
   ],
   "network": {
