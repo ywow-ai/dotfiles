@@ -1,0 +1,14 @@
+[WM]
+activeBackground=#16253A
+activeForeground=#C6D0DA
+
+[Colors:Window]
+BackgroundNormal=#16253A
+ForegroundNormal=#C6D0DA
+
+[Colors:View]
+BackgroundNormal=#16253A
+ForegroundNormal=#C6D0DA
+
+[UiSettings]
+ColorScheme=qt6ct

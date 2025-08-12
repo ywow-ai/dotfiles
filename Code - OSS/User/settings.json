@@ -1,6 +1,6 @@
 {
   "window.menuBarVisibility": "toggle",
-  "window.titleBarStyle": "custom",
+  "window.titleBarStyle": "native",
   "window.autoDetectColorScheme": true,
   "editor.tabSize": 2,
   "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
@@ -27,7 +27,7 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
@@ -58,6 +58,10 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.stickyScroll.enabled": false,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "git.openRepositoryInParentFolders": "always",
+  "redhat.telemetry.enabled": true,
   "-workbench.colorCustomizations": {
     "activityBar.background": "#222546",
     "activityBar.border": "#2A2D5C",
@@ -261,8 +265,5 @@
     //   "titleBar.inactiveForeground": "#638CC4",
     //   "tree.indentGuidesStroke": "#A7A8B5",
     //   "widget.shadow": "#22254630"
-  },
-  "git.confirmSync": false,
-  "git.autofetch": true,
-  "redhat.telemetry.enabled": true
+  }
 }
