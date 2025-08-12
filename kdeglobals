@@ -1,14 +1,14 @@
 [WM]
-activeBackground=#16253A
-activeForeground=#C6D0DA
+activeBackground=#000000
+activeForeground=#dddddd
 
 [Colors:Window]
-BackgroundNormal=#16253A
-ForegroundNormal=#C6D0DA
+BackgroundNormal=#000000
+ForegroundNormal=#dddddd
 
 [Colors:View]
-BackgroundNormal=#16253A
-ForegroundNormal=#C6D0DA
+BackgroundNormal=#000000
+ForegroundNormal=#dddddd
 
 [UiSettings]
 ColorScheme=qt6ct

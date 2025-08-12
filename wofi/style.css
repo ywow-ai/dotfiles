@@ -2,7 +2,7 @@
   border: none;
   outline: none;
   box-shadow: none;
-  color: rgba(198, 208, 218, 1);
+  color: rgba(255, 255, 255, 1);
   font-family: jetbrains mono nerd font, monospace;
 }
 
@@ -15,8 +15,8 @@ window {
 #outer-box {
   padding: 5px;
   border-radius: 10px;
-  background-color: rgba(22, 37, 58, 0.6);
-  border: 1px solid #1c64d1;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid #dddddd;
 }
 
 #input {
@@ -53,5 +53,5 @@ window {
 }
 
 #entry:selected {
-  background-color: rgba(89, 109, 134, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }

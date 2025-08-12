@@ -4,13 +4,13 @@
 }
 
 window#waybar {
-  background: rgba(22, 37, 58, 0.6);
-  color: rgba(198, 208, 218, 1);
+  background: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 1);
 }
 
 tooltip {
-  background: rgba(22, 37, 58, 0.6);
-  color: rgba(198, 208, 218, 1);
+  background: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 1);
 }
 
 #custom-arch {
@@ -19,7 +19,7 @@ tooltip {
 }
 
 #custom-arch:hover {
-  background-color: rgba(180, 190, 200, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 #workspaces {
@@ -33,8 +33,8 @@ tooltip {
   padding: 0px 4px;
   border-radius: 4px;
   border: none;
-  color: rgba(198, 208, 218, 1);
-  background-color: rgba(180, 190, 200, 0.2);
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.2);
   margin: 3px 3px 3px 0px;
 }
 
@@ -42,22 +42,22 @@ tooltip {
   padding: 0px 4px;
   border-radius: 4px;
   border: none;
-  color: rgba(198, 208, 218, 1);
-  background-color: rgba(180, 190, 200, 0.2);
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.2);
   margin-right: 3px;
 }
 
 #workspaces button:hover {
-  background: rgba(180, 190, 200, 1);
-  color: rgba(22, 37, 58, 1);
+  background: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
   box-shadow: none;
   text-shadow: none;
   transition: none;
 }
 
 #workspaces button.active {
-  background-color: rgba(180, 190, 200, 1);
-  color: rgba(22, 37, 58, 1);
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
 }
 
 #workspaces button.empty:not(:hover):not(.active) {
@@ -69,7 +69,7 @@ tooltip {
   padding: 0px 10px;
   margin: 3px 0px;
   border-radius: 4px;
-  background-color: rgba(22, 37, 58, 1);
+  background-color: rgba(0, 0, 0, 1);
 }
 
 #window {
@@ -78,7 +78,7 @@ tooltip {
   padding: 0px 5px;
   margin: 3px 3px 3px 0px;
   border-radius: 4px;
-  background-color: rgba(180, 190, 200, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 window#waybar.empty #window {
@@ -92,26 +92,26 @@ window#waybar.empty #window {
   padding: 0px 10px 0px 8px;
   border-radius: 4px;
   margin: 3px 3px 3px 0px;
-  background-color: rgba(180, 190, 200, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 #network.wifi,
 #network.ethernet {
-  background-color: rgba(63, 175, 90, 1);
+  background-color: rgba(25, 203, 0, 1);
 }
 
 #network.wifi:hover,
 #network.ethernet:hover {
-  background-color: rgba(63, 175, 90, 0.8);
+  background-color: rgba(25, 203, 0, 0.8);
 }
 
 #network.disabled {
-  background-color: rgba(186, 45, 32, 1);
+  background-color: rgba(204, 4, 3, 1);
 }
 
 #network:hover:not(.wifi):not(.ethernet) {
-  background-color: rgba(180, 190, 200, 1);
-  color: rgba(22, 37, 58, 1);
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
 }
 
 #backlight {
@@ -119,12 +119,12 @@ window#waybar.empty #window {
   padding: 0px 10px 0px 8px;
   border-radius: 4px;
   margin: 3px 3px 3px 0px;
-  background-color: rgba(180, 190, 200, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 #backlight:hover {
-  background-color: rgba(180, 190, 200, 1);
-  color: rgba(22, 37, 58, 1);
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
 }
 
 #bluetooth {
@@ -132,28 +132,28 @@ window#waybar.empty #window {
   padding: 0px 10px 0px 8px;
   border-radius: 4px;
   margin: 3px 3px 3px 0px;
-  background-color: rgba(180, 190, 200, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 #bluetooth.on {
-  background-color: rgba(28, 100, 209, 1);
+  background-color: rgba(13, 115, 204, 1);
 }
 
 #bluetooth.on:hover {
-  background-color: rgba(28, 100, 209, 0.8);
+  background-color: rgba(13, 115, 204, 0.8);
 }
 
 #bluetooth.disabled {
-  background-color: rgba(186, 45, 32, 1);
+  background-color: rgba(204, 4, 3, 1);
 }
 
 #bluetooth.disabled:hover {
-  background-color: rgba(186, 45, 32, 0.8);
+  background-color: rgba(204, 4, 3, 0.8);
 }
 
 #bluetooth:hover:not(.disabled):not(.on) {
-  background-color: rgba(180, 190, 200, 1);
-  color: rgba(22, 37, 58, 1);
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
 }
 
 #pulseaudio {
@@ -161,20 +161,20 @@ window#waybar.empty #window {
   padding: 0px 10px 0px 8px;
   border-radius: 4px;
   margin: 3px 3px 3px 0px;
-  background-color: rgba(180, 190, 200, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 #pulseaudio.muted {
-  background-color: rgba(186, 45, 32, 1);
+  background-color: rgba(204, 4, 3, 1);
 }
 
 #pulseaudio.muted:hover {
-  background-color: rgba(186, 45, 32, 0.8);
+  background-color: rgba(204, 4, 3, 0.8);
 }
 
 #pulseaudio:hover:not(.muted) {
-  background-color: rgba(180, 190, 200, 1);
-  color: rgba(22, 37, 58, 1);
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
 }
 
 #battery {
@@ -182,30 +182,30 @@ window#waybar.empty #window {
   padding: 0px 10px 0px 8px;
   border-radius: 4px;
   margin: 3px 3px 3px 0px;
-  background-color: rgba(180, 190, 200, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 #battery.critical {
-  background-color: rgba(186, 45, 32, 1);
+  background-color: rgba(204, 4, 3, 1);
 }
 
 #battery.critical:hover {
-  background-color: rgba(186, 45, 32, 0.8);
+  background-color: rgba(204, 4, 3, 0.8);
 }
 
 #battery.charging,
 #battery.plugged {
-  background-color: rgba(63, 175, 90, 1);
+  background-color: rgba(25, 203, 0, 1);
 }
 
 #battery.charging:hover,
 #battery.plugged:hover {
-  background-color: rgba(63, 175, 90, 0.8);
+  background-color: rgba(25, 203, 0, 0.8);
 }
 
 #battery:hover:not(.critical):not(.plugged):not(.charging) {
-  background-color: rgba(180, 190, 200, 1);
-  color: rgba(22, 37, 58, 1);
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
 }
 
 #custom-power {
@@ -213,9 +213,9 @@ window#waybar.empty #window {
   padding: 0px 10px 0px 8px;
   border-radius: 4px;
   margin: 3px 3px 3px 0px;
-  background-color: rgba(180, 190, 200, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 #custom-power:hover {
-  background-color: rgba(186, 45, 32, 1);
+  background-color: rgba(204, 4, 3, 1);
 }

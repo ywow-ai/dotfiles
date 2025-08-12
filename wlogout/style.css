@@ -5,7 +5,7 @@
 }
 
 window {
-  background-color: rgba(22, 37, 58, 0.6);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 button {
@@ -13,7 +13,7 @@ button {
   border-color: rgba(198, 208, 218, 1);
   text-decoration-color: rgba(198, 208, 218, 1);
   color: rgba(198, 208, 218, 1);
-  background-color: rgba(22, 37, 58, 1);
+  background-color: rgba(0, 0, 0, 1);
   border-style: solid;
   border-width: 1px;
   background-repeat: no-repeat;
@@ -25,7 +25,7 @@ button:focus,
 button:active,
 button:hover {
   /* 20% Overlay 2, 80% mantle */
-  background-color: rgba(89, 109, 134, 1);
+  background-color: rgba(70, 70, 70, 1);
   outline-style: none;
 }
 

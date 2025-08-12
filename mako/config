@@ -16,7 +16,7 @@ font=JetBrainsMono Nerd Font 11
 [urgency=normal]
 
 [urgency=high]
-border-color=#BA2D20
+border-color=#dddddd
 default-timeout=4000
 
 [category=mpd]
@@ -24,7 +24,7 @@ default-timeout=2000
 group-by=category
 
 [app-name=x-osd]
-background-color=#16253A
+background-color=#000000
 anchor=bottom-center
 default-timeout=1000
 border-size=0
